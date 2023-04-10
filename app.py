@@ -72,11 +72,11 @@ def display_top_courses(df):
 # Define function to get user input for preferences
 def get_user_input():
     # Display instructions to user
-    st.write('Please enter your top 6 preferences below:')
+    st.write('Please enter your top 1 preferences below:')
 
     # Retrieve user input for preferences
     preferences = []
-    for i in range(6):
+    for i in range(1):
         preference = st.text_input(f"Preference #{i+1}:")
         if preference:
             preferences.append(preference.strip())
